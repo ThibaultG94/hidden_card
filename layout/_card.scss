@@ -1,0 +1,29 @@
+.main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    &__btn {
+        max-width: 200px;
+        margin: 30px auto;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.button {
+    background: #C63F28;
+    text-align: center;
+    padding: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card {
+    width: 300px;
+}
