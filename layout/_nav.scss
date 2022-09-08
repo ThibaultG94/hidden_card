@@ -1,0 +1,20 @@
+nav {
+    background: #7A001B;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        margin-left: 25px;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+}
