@@ -16,6 +16,12 @@ nav {
 
     li {
         margin-left: 25px;
+        transition: transform 100ms, font-weight 150ms;
+
+        &:hover {
+            transform: scale(1.05);
+            font-weight: 500;
+        }
     }
 
     a {

@@ -37,6 +37,11 @@ nav ul {
 }
 nav li {
   margin-left: 25px;
+  transition: transform 100ms, font-weight 150ms;
+}
+nav li:hover {
+  transform: scale(1.05);
+  font-weight: 500;
 }
 nav a {
   font-size: 1.1rem;
@@ -65,10 +70,17 @@ nav a {
   cursor: pointer;
   border-radius: 2px;
   margin: 1px;
+  transition: background 300ms ease-in-out;
+}
+.button:hover {
+  background: #7A001B;
 }
 
 .btn--2 {
   background: #7A001B;
+}
+.btn--2:hover {
+  background: #C63F28;
 }
 
 .card {
