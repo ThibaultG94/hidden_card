@@ -6,7 +6,7 @@
 
     &__btn {
         max-width: 200px;
-        margin: 30px auto;
+        margin: 30px auto !important;
     }
 
     &__cards {
@@ -19,11 +19,60 @@
 .button {
     background: #C63F28;
     text-align: center;
-    padding: 10px 5px;
+    padding: 14px 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 2px;
+    margin: 1px;
+}
+
+.btn--2 {
+    background: #7A001B;
 }
 
 .card {
+    margin-top: 30px;
     width: 300px;
+
+    &__header {
+        height: 210px;
+        position: relative;
+
+        &--1 {
+            background: url("./img/photo-paysage-dautomne-6.jpg") bottom/cover;
+        }
+
+        &--2 {
+            background: url("./img/Naviguer-en-securite-automne.jpg") bottom/cover;
+        }
+
+        &--3 {
+            background: url("./img/carte_automne_Qc.jpg") bottom/cover;
+        }
+
+        &--title {
+            position: absolute;
+            bottom: 0;
+            background: rgba(#7A001B, 0.99);
+            width: 100%;
+            padding: 14px 0 14px 15px;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__content {
+        background: rgba(#C63F28, 0.08);
+        padding: 15px 15px 25px;
+
+        &--text {
+            background: rgb(238, 243, 245);
+            padding: 10px 20px 10px 10px;
+            margin-bottom: 15px;
+        }
+
+        &--btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
 }
