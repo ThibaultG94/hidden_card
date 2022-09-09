@@ -7,12 +7,24 @@
     &__btn {
         max-width: 200px;
         margin: 30px auto !important;
+        position: absolute;
+        top: 800px;
+        left: 40%;
+
+        &:active {
+            &+.main-container__cards {
+                &>.card--secret {
+                    visibility: hidden;
+                }
+            }
+        }
     }
 
     &__cards {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
 }
 
@@ -38,9 +50,23 @@
     }
 }
 
+.card--1 {
+    left: 0;
+}
+
+.card--secret {
+    left: 33%;
+}
+
+.card--3 {
+    left: 66%;
+}
+
 .card {
     margin-top: 30px;
     width: 300px;
+    position: absolute;
+    top: 0px;
 
     &__header {
         height: 210px;
